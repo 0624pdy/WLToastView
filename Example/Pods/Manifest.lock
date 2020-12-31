@@ -1,0 +1,16 @@
+PODS:
+  - WLToastView (0.1.0)
+
+DEPENDENCIES:
+  - WLToastView (from `../`)
+
+EXTERNAL SOURCES:
+  WLToastView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  WLToastView: 9507f61f928839f02767619856c533507bfd5dde
+
+PODFILE CHECKSUM: e0e136a26c7f28105aef8e091e59f29bd69a41f4
+
+COCOAPODS: 1.10.0

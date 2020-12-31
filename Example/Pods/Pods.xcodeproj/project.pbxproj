@@ -1,0 +1,770 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		462F252F5541EA2A9CB8C21CDBFECED8 /* WLToastView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AE0AC6F6BB682C836A9DBD5CFBC67C6 /* WLToastView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		500BFCC5F49AEF455DE4F313F0221D5E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		569F9C5696961F9725C1F80907536E80 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		8378D20C0877A62E631ADFB6F535D345 /* Pods-WLToastView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AC636057856EC765025EA58E88631203 /* Pods-WLToastView_Tests-dummy.m */; };
+		884FC3998B5C7694ABFA3CD578BE2660 /* Pods-WLToastView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8342A00CEE36A22AAD1F08B1A80A63D0 /* Pods-WLToastView_Example-dummy.m */; };
+		A1662F20B3682E2EC58881407E218978 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		A2CB1398AB6A5A3000F443858610FA55 /* WLToastView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 317FED2D4ACF434EC8921CB9F866989E /* WLToastView-dummy.m */; };
+		DB4FE14163708BEA495F90BED1C06C66 /* Pods-WLToastView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FF12239173E7275FE19D134644C02B9D /* Pods-WLToastView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5876021F97B4B411E9E64F1D57168A4 /* Pods-WLToastView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DB66AF6AD1A1F56C14ADB28DDC5DC27C /* Pods-WLToastView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE682E492907D89FC54760ED5BC8C667 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = AA43D82C1E0F056B03887FD47932673B /* ReplaceMe.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		28DCCB74050B2DAE13B1ECE8C6A3801C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A00061ED931F57A498D3AA9366D67B9;
+			remoteInfo = WLToastView;
+		};
+		DCD9466AC4EE2E8D81869C994693B85E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43D72E10B2B46AD31169206A1CCAB685;
+			remoteInfo = "Pods-WLToastView_Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0583C1582B4A79567013D9A383828C98 /* WLToastView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WLToastView.modulemap; sourceTree = "<group>"; };
+		0AE0AC6F6BB682C836A9DBD5CFBC67C6 /* WLToastView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WLToastView-umbrella.h"; sourceTree = "<group>"; };
+		1F4BA4C33E7D9D2D90DED705CBD9BD24 /* Pods-WLToastView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WLToastView_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		294AD01F7887876C38D03D2FDF6C3455 /* Pods-WLToastView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WLToastView_Example-frameworks.sh"; sourceTree = "<group>"; };
+		317FED2D4ACF434EC8921CB9F866989E /* WLToastView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WLToastView-dummy.m"; sourceTree = "<group>"; };
+		361DAFDE944B09E21EA9949325C7363B /* Pods-WLToastView_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WLToastView_Example-Info.plist"; sourceTree = "<group>"; };
+		3705A0937F3B72F7E967632FA525CF30 /* WLToastView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = WLToastView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		4B3A2C5625CEBAD6E60872370D984250 /* Pods-WLToastView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WLToastView_Tests.modulemap"; sourceTree = "<group>"; };
+		4D765341D5533C84A3F73E28DC5D9C19 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		54EC079233D6F80541606A4123A26A5C /* Pods-WLToastView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WLToastView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5973679E84C5A4066155DB730920D1EC /* Pods-WLToastView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WLToastView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		5BDE430EE4697D1380EDE4813E35E8F3 /* WLToastView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WLToastView.framework; path = WLToastView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		601B6E7D2F2D8E332480BCD9F815E798 /* WLToastView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WLToastView-prefix.pch"; sourceTree = "<group>"; };
+		6ACE20ECED4AC936A8ACED9D0F767DF7 /* Pods-WLToastView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WLToastView_Example.modulemap"; sourceTree = "<group>"; };
+		6C0809D700BC0C5E0E62B9B9B19818BB /* Pods-WLToastView_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WLToastView_Tests-Info.plist"; sourceTree = "<group>"; };
+		6F2178E578CF759494EE4CF64F69BFDD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7D1DA790E1F1955CAE8612914901277B /* Pods-WLToastView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WLToastView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		8342A00CEE36A22AAD1F08B1A80A63D0 /* Pods-WLToastView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WLToastView_Example-dummy.m"; sourceTree = "<group>"; };
+		917DE906612E34E065F97948F4F2814D /* WLToastView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WLToastView.release.xcconfig; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A4519385ED00F574B77F5028EF01E68B /* Pods_WLToastView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WLToastView_Example.framework; path = "Pods-WLToastView_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A600B130F63A7C2078B60D773385283B /* Pods-WLToastView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WLToastView_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		AA43D82C1E0F056B03887FD47932673B /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = WLToastView/Classes/ReplaceMe.m; sourceTree = "<group>"; };
+		AC636057856EC765025EA58E88631203 /* Pods-WLToastView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WLToastView_Tests-dummy.m"; sourceTree = "<group>"; };
+		B884F32FBF9A465B329366938053C59F /* Pods-WLToastView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WLToastView_Example.release.xcconfig"; sourceTree = "<group>"; };
+		BD7C97F79BBC7045F03E5BCAE3EDDED4 /* Pods-WLToastView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WLToastView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		BFCF45B6F5E0482F792943D6C0BB7BDD /* WLToastView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WLToastView.debug.xcconfig; sourceTree = "<group>"; };
+		C1184B0954828B6735305C4D676F7768 /* Pods-WLToastView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WLToastView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DB66AF6AD1A1F56C14ADB28DDC5DC27C /* Pods-WLToastView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WLToastView_Tests-umbrella.h"; sourceTree = "<group>"; };
+		EE8CDE9EEC8E77B7CC71035E73D79046 /* WLToastView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "WLToastView-Info.plist"; sourceTree = "<group>"; };
+		F892D8D892F58A9C8CBBEC61DFFBE1AD /* Pods_WLToastView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WLToastView_Tests.framework; path = "Pods-WLToastView_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF12239173E7275FE19D134644C02B9D /* Pods-WLToastView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WLToastView_Example-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3C9475149F2E6E552F77DE77272DA753 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1662F20B3682E2EC58881407E218978 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6F70E25CCEB067ABDAC60EDD23E6643 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				500BFCC5F49AEF455DE4F313F0221D5E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9365C2CA75D7835BE4AEEB7B5D78F73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				569F9C5696961F9725C1F80907536E80 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0FA8F08A285A95ED2800F039B4A8DC99 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EF7EACCECDEA31925015F728B0F29707 /* WLToastView */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		10306942BABE9C03A9247FCA05F7901D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0583C1582B4A79567013D9A383828C98 /* WLToastView.modulemap */,
+				317FED2D4ACF434EC8921CB9F866989E /* WLToastView-dummy.m */,
+				EE8CDE9EEC8E77B7CC71035E73D79046 /* WLToastView-Info.plist */,
+				601B6E7D2F2D8E332480BCD9F815E798 /* WLToastView-prefix.pch */,
+				0AE0AC6F6BB682C836A9DBD5CFBC67C6 /* WLToastView-umbrella.h */,
+				BFCF45B6F5E0482F792943D6C0BB7BDD /* WLToastView.debug.xcconfig */,
+				917DE906612E34E065F97948F4F2814D /* WLToastView.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/WLToastView";
+			sourceTree = "<group>";
+		};
+		40DBEEFB6AAEFD85D7E89E9DA76EF3DF /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8CD40DC9299CB0C91776DE8A8EA9CEB8 /* Pods-WLToastView_Example */,
+				A5A62F35E9CBAF01BAE7904B7D15092F /* Pods-WLToastView_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		76F02F69719D8970A82ECBF98B2B0EEA /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				4D765341D5533C84A3F73E28DC5D9C19 /* LICENSE */,
+				6F2178E578CF759494EE4CF64F69BFDD /* README.md */,
+				3705A0937F3B72F7E967632FA525CF30 /* WLToastView.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		8CD40DC9299CB0C91776DE8A8EA9CEB8 /* Pods-WLToastView_Example */ = {
+			isa = PBXGroup;
+			children = (
+				6ACE20ECED4AC936A8ACED9D0F767DF7 /* Pods-WLToastView_Example.modulemap */,
+				C1184B0954828B6735305C4D676F7768 /* Pods-WLToastView_Example-acknowledgements.markdown */,
+				7D1DA790E1F1955CAE8612914901277B /* Pods-WLToastView_Example-acknowledgements.plist */,
+				8342A00CEE36A22AAD1F08B1A80A63D0 /* Pods-WLToastView_Example-dummy.m */,
+				294AD01F7887876C38D03D2FDF6C3455 /* Pods-WLToastView_Example-frameworks.sh */,
+				361DAFDE944B09E21EA9949325C7363B /* Pods-WLToastView_Example-Info.plist */,
+				FF12239173E7275FE19D134644C02B9D /* Pods-WLToastView_Example-umbrella.h */,
+				1F4BA4C33E7D9D2D90DED705CBD9BD24 /* Pods-WLToastView_Example.debug.xcconfig */,
+				B884F32FBF9A465B329366938053C59F /* Pods-WLToastView_Example.release.xcconfig */,
+			);
+			name = "Pods-WLToastView_Example";
+			path = "Target Support Files/Pods-WLToastView_Example";
+			sourceTree = "<group>";
+		};
+		A5A62F35E9CBAF01BAE7904B7D15092F /* Pods-WLToastView_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				4B3A2C5625CEBAD6E60872370D984250 /* Pods-WLToastView_Tests.modulemap */,
+				54EC079233D6F80541606A4123A26A5C /* Pods-WLToastView_Tests-acknowledgements.markdown */,
+				BD7C97F79BBC7045F03E5BCAE3EDDED4 /* Pods-WLToastView_Tests-acknowledgements.plist */,
+				AC636057856EC765025EA58E88631203 /* Pods-WLToastView_Tests-dummy.m */,
+				6C0809D700BC0C5E0E62B9B9B19818BB /* Pods-WLToastView_Tests-Info.plist */,
+				DB66AF6AD1A1F56C14ADB28DDC5DC27C /* Pods-WLToastView_Tests-umbrella.h */,
+				5973679E84C5A4066155DB730920D1EC /* Pods-WLToastView_Tests.debug.xcconfig */,
+				A600B130F63A7C2078B60D773385283B /* Pods-WLToastView_Tests.release.xcconfig */,
+			);
+			name = "Pods-WLToastView_Tests";
+			path = "Target Support Files/Pods-WLToastView_Tests";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				0FA8F08A285A95ED2800F039B4A8DC99 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				D50B3BD7085B53FD812020FE819B3307 /* Products */,
+				40DBEEFB6AAEFD85D7E89E9DA76EF3DF /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D50B3BD7085B53FD812020FE819B3307 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A4519385ED00F574B77F5028EF01E68B /* Pods_WLToastView_Example.framework */,
+				F892D8D892F58A9C8CBBEC61DFFBE1AD /* Pods_WLToastView_Tests.framework */,
+				5BDE430EE4697D1380EDE4813E35E8F3 /* WLToastView.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF7EACCECDEA31925015F728B0F29707 /* WLToastView */ = {
+			isa = PBXGroup;
+			children = (
+				AA43D82C1E0F056B03887FD47932673B /* ReplaceMe.m */,
+				76F02F69719D8970A82ECBF98B2B0EEA /* Pod */,
+				10306942BABE9C03A9247FCA05F7901D /* Support Files */,
+			);
+			name = WLToastView;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8F7507FD29EA6EF3E984BA6F4DA2FA70 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB4FE14163708BEA495F90BED1C06C66 /* Pods-WLToastView_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		991C10F786FEA618203F46A1308070B1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5876021F97B4B411E9E64F1D57168A4 /* Pods-WLToastView_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E368BA837B0CACD0E0A7966403F182D0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				462F252F5541EA2A9CB8C21CDBFECED8 /* WLToastView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3A00061ED931F57A498D3AA9366D67B9 /* WLToastView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66F564066796B5BA0FFD56BDA9C1C169 /* Build configuration list for PBXNativeTarget "WLToastView" */;
+			buildPhases = (
+				E368BA837B0CACD0E0A7966403F182D0 /* Headers */,
+				575C9BF704CC9E43C0BD5D7E947E087A /* Sources */,
+				C6F70E25CCEB067ABDAC60EDD23E6643 /* Frameworks */,
+				DFC1FE659CB78DADFBD1FBC414072C75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WLToastView;
+			productName = WLToastView;
+			productReference = 5BDE430EE4697D1380EDE4813E35E8F3 /* WLToastView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		43D72E10B2B46AD31169206A1CCAB685 /* Pods-WLToastView_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CB9F166A300B8A47EC8B65C90ECC1A6 /* Build configuration list for PBXNativeTarget "Pods-WLToastView_Example" */;
+			buildPhases = (
+				8F7507FD29EA6EF3E984BA6F4DA2FA70 /* Headers */,
+				BD5C0BD5BF6D0989C41E9A5E60EE2B5E /* Sources */,
+				E9365C2CA75D7835BE4AEEB7B5D78F73 /* Frameworks */,
+				42400A40F84687FFA011DDDE254FE9BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C052536A3FDDEEF153A09970856589EF /* PBXTargetDependency */,
+			);
+			name = "Pods-WLToastView_Example";
+			productName = "Pods-WLToastView_Example";
+			productReference = A4519385ED00F574B77F5028EF01E68B /* Pods_WLToastView_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C0283AB8CA6426C562153E4AD5F6E77F /* Pods-WLToastView_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E0C4A51A2A18CD1F479ABD4BE2A2DAC /* Build configuration list for PBXNativeTarget "Pods-WLToastView_Tests" */;
+			buildPhases = (
+				991C10F786FEA618203F46A1308070B1 /* Headers */,
+				657C19A8C92CC9B55721CE431785FC3A /* Sources */,
+				3C9475149F2E6E552F77DE77272DA753 /* Frameworks */,
+				0B1F2F9EB56F25E6257BEACD025BE810 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E5A4EC6750042BD547950A03CB96717A /* PBXTargetDependency */,
+			);
+			name = "Pods-WLToastView_Tests";
+			productName = "Pods-WLToastView_Tests";
+			productReference = F892D8D892F58A9C8CBBEC61DFFBE1AD /* Pods_WLToastView_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = D50B3BD7085B53FD812020FE819B3307 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				43D72E10B2B46AD31169206A1CCAB685 /* Pods-WLToastView_Example */,
+				C0283AB8CA6426C562153E4AD5F6E77F /* Pods-WLToastView_Tests */,
+				3A00061ED931F57A498D3AA9366D67B9 /* WLToastView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0B1F2F9EB56F25E6257BEACD025BE810 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42400A40F84687FFA011DDDE254FE9BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFC1FE659CB78DADFBD1FBC414072C75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		575C9BF704CC9E43C0BD5D7E947E087A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE682E492907D89FC54760ED5BC8C667 /* ReplaceMe.m in Sources */,
+				A2CB1398AB6A5A3000F443858610FA55 /* WLToastView-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		657C19A8C92CC9B55721CE431785FC3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8378D20C0877A62E631ADFB6F535D345 /* Pods-WLToastView_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD5C0BD5BF6D0989C41E9A5E60EE2B5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				884FC3998B5C7694ABFA3CD578BE2660 /* Pods-WLToastView_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C052536A3FDDEEF153A09970856589EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WLToastView;
+			target = 3A00061ED931F57A498D3AA9366D67B9 /* WLToastView */;
+			targetProxy = 28DCCB74050B2DAE13B1ECE8C6A3801C /* PBXContainerItemProxy */;
+		};
+		E5A4EC6750042BD547950A03CB96717A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-WLToastView_Example";
+			target = 43D72E10B2B46AD31169206A1CCAB685 /* Pods-WLToastView_Example */;
+			targetProxy = DCD9466AC4EE2E8D81869C994693B85E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		03582DC8E575762C7B8E6D191769ADB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5973679E84C5A4066155DB730920D1EC /* Pods-WLToastView_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WLToastView_Tests/Pods-WLToastView_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WLToastView_Tests/Pods-WLToastView_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		068004E079088E356D2DA90A20770A99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFCF45B6F5E0482F792943D6C0BB7BDD /* WLToastView.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/WLToastView/WLToastView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WLToastView/WLToastView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/WLToastView/WLToastView.modulemap";
+				PRODUCT_MODULE_NAME = WLToastView;
+				PRODUCT_NAME = WLToastView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		5B2CA1BBFCFF0789CB5A72030581DA4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B884F32FBF9A465B329366938053C59F /* Pods-WLToastView_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WLToastView_Example/Pods-WLToastView_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WLToastView_Example/Pods-WLToastView_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7948F6BE70EFBDF9E8EE47522F64AEE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 917DE906612E34E065F97948F4F2814D /* WLToastView.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/WLToastView/WLToastView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WLToastView/WLToastView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/WLToastView/WLToastView.modulemap";
+				PRODUCT_MODULE_NAME = WLToastView;
+				PRODUCT_NAME = WLToastView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		79531591E592A19570EA44B877F9B1D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A600B130F63A7C2078B60D773385283B /* Pods-WLToastView_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WLToastView_Tests/Pods-WLToastView_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WLToastView_Tests/Pods-WLToastView_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		CF26B952161414C8307A282992ADD918 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F4BA4C33E7D9D2D90DED705CBD9BD24 /* Pods-WLToastView_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WLToastView_Example/Pods-WLToastView_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WLToastView_Example/Pods-WLToastView_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */,
+				CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66F564066796B5BA0FFD56BDA9C1C169 /* Build configuration list for PBXNativeTarget "WLToastView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				068004E079088E356D2DA90A20770A99 /* Debug */,
+				7948F6BE70EFBDF9E8EE47522F64AEE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CB9F166A300B8A47EC8B65C90ECC1A6 /* Build configuration list for PBXNativeTarget "Pods-WLToastView_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF26B952161414C8307A282992ADD918 /* Debug */,
+				5B2CA1BBFCFF0789CB5A72030581DA4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E0C4A51A2A18CD1F479ABD4BE2A2DAC /* Build configuration list for PBXNativeTarget "Pods-WLToastView_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03582DC8E575762C7B8E6D191769ADB0 /* Debug */,
+				79531591E592A19570EA44B877F9B1D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
