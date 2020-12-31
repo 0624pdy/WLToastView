@@ -10,9 +10,3 @@
 #endif
 #endif
 
-#import "WLToastView.h"
-#import "WLToastViewTypes.h"
-
-FOUNDATION_EXPORT double WLToastViewVersionNumber;
-FOUNDATION_EXPORT const unsigned char WLToastViewVersionString[];
-

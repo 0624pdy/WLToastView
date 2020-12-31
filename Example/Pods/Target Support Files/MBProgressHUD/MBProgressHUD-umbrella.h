@@ -10,9 +10,8 @@
 #endif
 #endif
 
-#import "WLToastView.h"
-#import "WLToastViewTypes.h"
+#import "MBProgressHUD.h"
 
-FOUNDATION_EXPORT double WLToastViewVersionNumber;
-FOUNDATION_EXPORT const unsigned char WLToastViewVersionString[];
+FOUNDATION_EXPORT double MBProgressHUDVersionNumber;
+FOUNDATION_EXPORT const unsigned char MBProgressHUDVersionString[];
 

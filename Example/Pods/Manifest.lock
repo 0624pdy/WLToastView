@@ -1,16 +1,27 @@
 PODS:
-  - WLToastView (0.1.0)
+  - Masonry (1.1.0)
+  - MBProgressHUD (1.2.0)
+  - WLToastView (0.0.1):
+    - Masonry
 
 DEPENDENCIES:
+  - MBProgressHUD
   - WLToastView (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Masonry
+    - MBProgressHUD
 
 EXTERNAL SOURCES:
   WLToastView:
     :path: "../"
 
 SPEC CHECKSUMS:
-  WLToastView: 9507f61f928839f02767619856c533507bfd5dde
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  WLToastView: 5de5a6d5d2b3c853790fab67dc2932ab289e0737
 
-PODFILE CHECKSUM: e0e136a26c7f28105aef8e091e59f29bd69a41f4
+PODFILE CHECKSUM: 3526e1e776a4455208a99b93cc1f3ad011c852da
 
 COCOAPODS: 1.10.0

@@ -38,7 +38,7 @@
 
 /* Begin PBXFileReference section */
 		152AA9491A02B1D0B78A5151 /* Pods_WLToastView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WLToastView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		250A477446CBA352CBE44C22 /* WLToastView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = WLToastView.podspec; path = ../WLToastView.podspec; sourceTree = "<group>"; };
+		250A477446CBA352CBE44C22 /* WLToastView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = WLToastView.podspec; path = ../WLToastView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		39BF616C3D94A0C3C79531F6 /* Pods-WLToastView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WLToastView_Tests.debug.xcconfig"; path = "Target Support Files/Pods-WLToastView_Tests/Pods-WLToastView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		4A85467BC45A5B5ADE708066 /* Pods-WLToastView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WLToastView_Tests.release.xcconfig"; path = "Target Support Files/Pods-WLToastView_Tests/Pods-WLToastView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		567AC97406BDFB69FC5E3737 /* Pods-WLToastView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WLToastView_Example.release.xcconfig"; path = "Target Support Files/Pods-WLToastView_Example/Pods-WLToastView_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -62,11 +62,11 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		947D13E1040B61C5C44AC41A /* Pods_WLToastView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WLToastView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFA630C4E107F6C529E05BB5 /* Pods-WLToastView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WLToastView_Example.debug.xcconfig"; path = "Target Support Files/Pods-WLToastView_Example/Pods-WLToastView_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		ED7081A54662C21A3DC7F4A1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		F68983021410ABF4EB4DFBAC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		ED7081A54662C21A3DC7F4A1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		F68983021410ABF4EB4DFBAC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +95,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02E427ED259DC38400306172 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Files;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
@@ -134,11 +141,9 @@
 			children = (
 				6003F59C195388D20070C39A /* WLAppDelegate.h */,
 				6003F59D195388D20070C39A /* WLAppDelegate.m */,
-				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* WLViewController.h */,
 				6003F5A6195388D20070C39A /* WLViewController.m */,
-				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
-				6003F5A8195388D20070C39A /* Images.xcassets */,
+				02E427ED259DC38400306172 /* Files */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
 			name = "Example for WLToastView";
@@ -148,6 +153,9 @@
 		6003F594195388D20070C39A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
+				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
+				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F595195388D20070C39A /* WLToastView-Info.plist */,
 				6003F596195388D20070C39A /* InfoPlist.strings */,
 				6003F599195388D20070C39A /* main.m */,
@@ -193,7 +201,6 @@
 				39BF616C3D94A0C3C79531F6 /* Pods-WLToastView_Tests.debug.xcconfig */,
 				4A85467BC45A5B5ADE708066 /* Pods-WLToastView_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +265,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -346,10 +354,14 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-WLToastView_Example/Pods-WLToastView_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/WLToastView/WLToastView.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WLToastView.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
