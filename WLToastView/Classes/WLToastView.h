@@ -9,10 +9,34 @@
 #import <UIKit/UIKit.h>
 
 #import "WLToastViewTypes.h"
+#import "WLToastLayout.h"
 
 @interface WLToastView : UIView
 
-- (void)showAnimated:(BOOL)animated;
-- (void)dismissDelay:(NSTimeInterval)delay;
++ (instancetype)sharedToast;
+
++ (void)setLayout:(WLToastLayout *)layout;
+
+
+
+
++ (void)showLoadingWithText:(NSString *)text detail:(NSString *)detail animated:(BOOL)animated;
++ (void)showLoadingWithText:(NSString *)text detail:(NSString *)detail;
++ (void)showLoadingWithText:(NSString *)text;
++ (void)showLoading;
+
++ (void)showImage:(id)image text:(NSString *)text detail:(NSString *)detail animated:(BOOL)animated;
++ (void)showImage:(id)image text:(NSString *)text detail:(NSString *)detail;
++ (void)showImage:(id)image text:(NSString *)text;
++ (void)showImage:(id)image;
+
++ (void)showText:(NSString *)text detail:(NSString *)detail animated:(BOOL)animated;
++ (void)showText:(NSString *)text detail:(NSString *)detail;
++ (void)showText:(NSString *)text;
+
++ (void)showCustomView:(UIView *)customView animated:(BOOL)animated;
++ (void)showCustomView:(UIView *)customView;
+
++ (void)dismissAnimated:(BOOL)animated;
 
 @end

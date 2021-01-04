@@ -10,10 +10,10 @@
 #define WLToastViewTypes_h
 
 typedef NS_ENUM(NSInteger, WLToastViewStyle) {
-    WLToastViewStyle_ActivityIndicatorView  = 0,
-    WLToastViewStyle_Image                  = 1,
-    WLToastViewStyle_Text                   = 2,
-    WLToastViewStyle_Custom                 = 3,
+    WLToastViewStyle_ActivityIndicator  = 0,    //活动指示器（旋转的菊花）
+    WLToastViewStyle_Image              = 1,    //图片
+    WLToastViewStyle_Text               = 2,    //纯文本
+    WLToastViewStyle_Custom             = 3,    //自定义视图
 };
 
 #endif /* WLToastViewTypes_h */

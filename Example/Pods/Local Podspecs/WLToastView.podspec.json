@@ -18,7 +18,10 @@
   "platforms": {
     "ios": "9.0"
   },
-  "source_files": "WLToastView/Classes/**/*",
+  "source_files": [
+    "WLToastView/Classes/**/*",
+    "WLToastView/Classes/WLToastContainer/*"
+  ],
   "dependencies": {
     "Masonry": [
 

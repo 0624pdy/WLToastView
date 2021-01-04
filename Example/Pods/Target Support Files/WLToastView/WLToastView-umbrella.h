@@ -10,6 +10,9 @@
 #endif
 #endif
 
+#import "WLToastContainer.h"
+#import "WLToastData.h"
+#import "WLToastLayout.h"
 #import "WLToastView.h"
 #import "WLToastViewTypes.h"
 
