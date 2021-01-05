@@ -30,7 +30,7 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'WLToastView/Classes/**/*', 'WLToastView/Classes/WLToastContainer/*'
+  s.source_files = 'WLToastView/Classes/**/*'
   
   # s.resource_bundles = {
   #   'WLToastView' => ['WLToastView/Assets/*.png']
@@ -42,5 +42,6 @@ TODO: Add long description of the pod here.
   
   
   s.dependency 'Masonry'
+  s.dependency 'SDWebImage'
   
 end

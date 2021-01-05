@@ -1,8 +1,12 @@
 PODS:
   - Masonry (1.1.0)
   - MBProgressHUD (1.2.0)
+  - SDWebImage (5.10.1):
+    - SDWebImage/Core (= 5.10.1)
+  - SDWebImage/Core (5.10.1)
   - WLToastView (0.0.1):
     - Masonry
+    - SDWebImage
 
 DEPENDENCIES:
   - MBProgressHUD
@@ -12,6 +16,7 @@ SPEC REPOS:
   trunk:
     - Masonry
     - MBProgressHUD
+    - SDWebImage
 
 EXTERNAL SOURCES:
   WLToastView:
@@ -20,7 +25,8 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
-  WLToastView: c9c23f7a18de14bbc44ebdea102a9c046921a203
+  SDWebImage: f66a16b95183b92ed6b965ad21d33167bc07612d
+  WLToastView: a5d5492bcc0415ba0a9a5fd1e4cc589cec969282
 
 PODFILE CHECKSUM: 3526e1e776a4455208a99b93cc1f3ad011c852da
 

@@ -18,12 +18,12 @@
   "platforms": {
     "ios": "9.0"
   },
-  "source_files": [
-    "WLToastView/Classes/**/*",
-    "WLToastView/Classes/WLToastContainer/*"
-  ],
+  "source_files": "WLToastView/Classes/**/*",
   "dependencies": {
     "Masonry": [
+
+    ],
+    "SDWebImage": [
 
     ]
   }
