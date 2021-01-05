@@ -1,3 +1,6 @@
+source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/0624pdy/WLToastView.git'
+
 use_frameworks!
 
 platform :ios, '9.0'
@@ -5,12 +8,6 @@ platform :ios, '9.0'
 target 'WLToastView_Example' do
   
   pod 'WLToastView', :path => '../'
+#  pod 'WLToastView'
   
-  pod 'MBProgressHUD'
-
-  target 'WLToastView_Tests' do
-    inherit! :search_paths
-
-    
-  end
 end

@@ -8,9 +8,9 @@
 #ifndef WLToastUtil_h
 #define WLToastUtil_h
 
-#import "WLToastView+Usage.h"
-#import "WLToastViewTypes.h"
-#import "WLToastLayout.h"
-#import "WLToastData.h"
+#import <WLToastView/WLToastView+Usage.h>
+#import <WLToastView/WLToastViewTypes.h>
+#import <WLToastView/WLToastLayout.h>
+#import <WLToastView/WLToastData.h>
 
 #endif /* WLToastUtil_h */
