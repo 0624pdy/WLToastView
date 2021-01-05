@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'WLToastView'
   s.version          = '0.0.1'
-  s.summary          = 'A short description of WLToastView.'
+  s.summary          = '一款支持多种风格的指示器（HUD、Tips、Toast ... ）'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,15 +18,13 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  一款支持多种风格的指示器（HUD、Tips、Toast ... ），支持多种动画
                        DESC
 
-  s.homepage         = 'https://github.com/0624pdy@sina.com/WLToastView'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/0624pdy/WLToastView'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { '0624pdy@sina.com' => 'pengduanyang@jze100.com' }
-  s.source           = { :git => 'https://github.com/0624pdy@sina.com/WLToastView.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => 'https://github.com/0624pdy/WLToastView.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '9.0'
 
