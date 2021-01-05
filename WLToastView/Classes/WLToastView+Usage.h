@@ -11,18 +11,6 @@
 
 
 
-#pragma mark - 通用
-
-/**
- *  显示，通用
- *
- *  @param data     - 配置信息
- *  @param animated - 是否带动画
- */
-+ (void)showWithData:(WLToastData *)data animated:(BOOL)animated;
-
-
-
 #pragma mark - 活动指示器
 
 /**
