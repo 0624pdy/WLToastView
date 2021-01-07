@@ -3,7 +3,7 @@ PODS:
   - SDWebImage (5.10.2):
     - SDWebImage/Core (= 5.10.2)
   - SDWebImage/Core (5.10.2)
-  - WLToastView (0.0.1):
+  - WLToastView (0.0.2):
     - Masonry
     - SDWebImage
 
@@ -22,8 +22,8 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   SDWebImage: b969dcfc02c40a5da71eac0b03b8f1a0c794a86f
-  WLToastView: efc92feac4b7ea8a32e58401ac45d7c197aed43f
+  WLToastView: 19387fbcd8ee5444e0ddeaf04961d548979fa7b4
 
-PODFILE CHECKSUM: e73fcbd7cbaa2353840dc6105064daef1587fe75
+PODFILE CHECKSUM: 322d1da5a6400b244ad99a15dc19f69382a46ca3
 
 COCOAPODS: 1.10.0
