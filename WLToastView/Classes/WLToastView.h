@@ -19,7 +19,7 @@
  */
 + (instancetype)sharedToast;
 
-/** 布局信息 */
+/** 布局信息，默认：WLToastLayout.defaultLayout */
 @property (nonatomic,class) WLToastLayout *layout;
 
 /** 动画样式，详见枚举：WLToastAnimation */

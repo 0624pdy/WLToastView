@@ -105,6 +105,7 @@
 
 
 
+/** 是否带动画，根据 style属性 获取 */
 @property (nonatomic,assign,readonly) BOOL animated;
 
 @end

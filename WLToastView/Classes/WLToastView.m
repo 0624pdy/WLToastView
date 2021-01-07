@@ -77,11 +77,12 @@ static double WLToastAnimationMaxScale              = 1.5;
 }
 - (void)defaultSetup {
     
-    _animation = WLToastAnimation_Fade;
-    _dismissDelay = 1.5;
-    _showBgView = YES;
-    _bgViewColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.2];
-    _isAnimating = NO;
+    _layout         = WLToastLayout.defaultLayout;
+    _animation      = WLToastAnimation_Fade;
+    _dismissDelay   = 1.5;
+    _showBgView     = YES;
+    _bgViewColor    = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.2];
+    _isAnimating    = NO;
     
     self.backgroundColor = _bgViewColor;
     self.alpha = 0;
