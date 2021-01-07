@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WLToastView'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.summary          = '一款支持多种风格的指示器（HUD、Tips、Toast ... ）'
 
 # This description is used to generate tags and improve search results.

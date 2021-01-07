@@ -103,4 +103,8 @@
 /** 是否显示详情 */
 @property (nonatomic,assign,readonly) BOOL showDetail;
 
+
+
+@property (nonatomic,assign,readonly) BOOL animated;
+
 @end

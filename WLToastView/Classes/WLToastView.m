@@ -15,10 +15,14 @@
 #import "WLToastData.h"
 
 
-/** 动画时长 */
-static double WLToastAnimationDuration  = 0.2;
+/** 动画时长 - 显示 */
+static double WLToastAnimationDuration_Show         = 0.125;
+/** 动画时长 - 显示 - 弹性 */
+static double WLToastAnimationDuration_Show_Bounce  = 0.3;
+/** 动画时长 - 消失 */
+static double WLToastAnimationDuration_Hide         = 0.25;
 /** 缩放动画的最大倍数 */
-static double WLToastAnimationMaxScale  = 1.5;
+static double WLToastAnimationMaxScale              = 1.5;
 
 
 @interface WLToastView ()
@@ -32,15 +36,18 @@ static double WLToastAnimationMaxScale  = 1.5;
 @property (nonatomic,strong) UILabel *lbl_text;                 //内置控件 - 文本标签
 @property (nonatomic,strong) UILabel *lbl_detail;               //内置控件 - 详情
 @property (nonatomic,strong) UIView *customView;                //⭕️ 外部控件 - 自定义视图
+@property (nonatomic,strong) UIButton *debug_closeBtn;          //关闭按钮，测试用
 
 @property (nonatomic,strong) WLToastLayout *layout;             //布局
 @property (nonatomic,assign) WLToastAnimation animation;        //动画，默认：WLToastAnimation_Fade
 @property (nonatomic,assign) NSTimeInterval dismissDelay;       //展示时长（单位：秒）（ 延迟 dismissDelay秒 后自动关闭 ），default：1.5
 @property (nonatomic,assign) BOOL showBgView;                   //是否显背景层，default：YES
 @property (nonatomic,strong) UIColor *bgViewColor;              //背景层颜色，default：RGBA(0, 0, 0, 0.2)
-@property (nonatomic,assign) BOOL shouldDismissWhenTapedBgView; //点击背景时是否关闭，default：NO
 
 @property (nonatomic,strong) WLToastData *data;                 //内容
+
+
+@property (nonatomic,assign) BOOL isAnimating;
 
 @end
 
@@ -74,10 +81,16 @@ static double WLToastAnimationMaxScale  = 1.5;
     _dismissDelay = 1.5;
     _showBgView = YES;
     _bgViewColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.2];
-    self.shouldDismissWhenTapedBgView = NO;
+    _isAnimating = NO;
     
     self.backgroundColor = _bgViewColor;
     self.alpha = 0;
+    
+    [self addSubview:self.debug_closeBtn];
+    [self.debug_closeBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.bottom.mas_equalTo(self).mas_offset(-34);
+        make.right.mas_equalTo(self).mas_offset(-16);
+    }];
 }
 
 
@@ -366,17 +379,26 @@ static double WLToastAnimationMaxScale  = 1.5;
 }
 - (void)showAnimated:(BOOL)animated {
     
+    if (_isAnimating) {
+        return;
+    }
+    
     UIView *superview = [UIApplication sharedApplication].keyWindow;
     [superview addSubview:self];
     [self layoutSelf];
+    
+    self.debug_closeBtn.hidden = (self.data.style != WLToastViewStyle_ActivityIndicator);
     
     self.containerView.transform = CGAffineTransformIdentity;
     
     //有动画
     if (animated && self.animation != WLToastAnimation_None) {
+        
+        _isAnimating = YES;
+        
         //动画样式：渐变
         if (self.animation == WLToastAnimation_Fade) {
-            [UIView animateWithDuration:WLToastAnimationDuration animations:^{
+            [UIView animateWithDuration:WLToastAnimationDuration_Show animations:^{
                 self.alpha = 1;
             } completion:^(BOOL finished) {
                 [self startTimer_ifNeeded];
@@ -385,7 +407,7 @@ static double WLToastAnimationMaxScale  = 1.5;
         //动画样式：缩放渐变
         else if (self.animation == WLToastAnimation_ScaleFade) {
             self.containerView.transform = CGAffineTransformMakeScale(WLToastAnimationMaxScale, WLToastAnimationMaxScale);
-            [UIView animateWithDuration:WLToastAnimationDuration animations:^{
+            [UIView animateWithDuration:WLToastAnimationDuration_Show animations:^{
                 self.alpha = 1;
                 self.containerView.transform = CGAffineTransformIdentity;
             } completion:^(BOOL finished) {
@@ -395,10 +417,10 @@ static double WLToastAnimationMaxScale  = 1.5;
         //动画样式：弹性
         else if (self.animation == WLToastAnimation_Bounce) {
             self.containerView.transform = CGAffineTransformMakeScale(WLToastAnimationMaxScale, WLToastAnimationMaxScale);
-            [UIView animateWithDuration:WLToastAnimationDuration
+            [UIView animateWithDuration:WLToastAnimationDuration_Show_Bounce
                                   delay:0
-                 usingSpringWithDamping:0.3
-                  initialSpringVelocity:10.0
+                 usingSpringWithDamping:0.5
+                  initialSpringVelocity:15.0
                                 options:UIViewAnimationOptionLayoutSubviews
                              animations:^
             {
@@ -422,27 +444,38 @@ static double WLToastAnimationMaxScale  = 1.5;
     }
 }
 - (void)dismissAnimated:(BOOL)animated {
+
+    [self resetTimer];
+    
     if (animated && self.animation != WLToastAnimation_None) {
         //动画样式：渐变
         if (self.animation == WLToastAnimation_Fade) {
-            [UIView animateWithDuration:WLToastAnimationDuration animations:^{
+            [UIView animateWithDuration:WLToastAnimationDuration_Hide
+                             animations:^
+            {
                 self.alpha = 0;
-            } completion:^(BOOL finished) {
-                [self removeFromSuperview];
+            }
+                             completion:^(BOOL finished)
+            {
+                [self didDismiss];
             }];
         }
         //动画样式：缩放渐变
         else if (self.animation == WLToastAnimation_ScaleFade) {
-            [UIView animateWithDuration:WLToastAnimationDuration animations:^{
+            [UIView animateWithDuration:WLToastAnimationDuration_Hide
+                             animations:^
+            {
                 self.alpha = 0;
                 self.containerView.transform = CGAffineTransformMakeScale(WLToastAnimationMaxScale, WLToastAnimationMaxScale);
-            } completion:^(BOOL finished) {
-                [self removeFromSuperview];
+            }
+                             completion:^(BOOL finished)
+            {
+                    [self didDismiss];
             }];
         }
         //动画样式：弹性
         else if (self.animation == WLToastAnimation_Bounce) {
-            [UIView animateWithDuration:WLToastAnimationDuration
+            [UIView animateWithDuration:WLToastAnimationDuration_Hide
                                   delay:0
                  usingSpringWithDamping:1.0
                   initialSpringVelocity:10.0
@@ -454,7 +487,7 @@ static double WLToastAnimationMaxScale  = 1.5;
             }
                              completion:^(BOOL finished)
             {
-                [self removeFromSuperview];
+                [self didDismiss];
             }];
         }
         //动画样式：其他
@@ -463,8 +496,12 @@ static double WLToastAnimationMaxScale  = 1.5;
         }
     } else {
         self.alpha = 0;
-        [self removeFromSuperview];
+        [self didDismiss];
     }
+}
+- (void)didDismiss {
+    [self removeFromSuperview];
+    _isAnimating = NO;
 }
 
 
@@ -484,49 +521,13 @@ static double WLToastAnimationMaxScale  = 1.5;
 
 
 
-#pragma mark -
-
-//- (void)willMoveToSuperview:(UIView *)newSuperview {
-//    if (newSuperview) {
-//        NSLog(@"willMoveToSuperview: %@", NSStringFromClass(newSuperview.class));
-//    } else {
-//        NSLog(@"willMoveToSuperview: %@", nil);
-//    }
-//}
-//- (void)didMoveToSuperview {
-//    if (self.superview) {
-//        NSLog(@"didMoveToSuperview: %@", NSStringFromClass(self.superview.class));
-//    } else {
-//        NSLog(@"didMoveToSuperview: %@", nil);
-//    }
-//}
-//- (void)layoutSubviews {
-//    [super layoutSubviews];
-//
-//}
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    
-    UITouch *touch = touches.anyObject;
-    CGPoint point = [touch locationInView:self];
-    if (CGRectContainsPoint(self.containerView.frame, point)) {
-        return;
-    }
-    
-    [self resetTimer];
-    [self dismissAnimated:YES];
-}
-
-
-
-
-
 #pragma mark - Getter & Setter
 
 - (UIView *)containerView {
     if (!_containerView) {
         _containerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 10, 10)];
         _containerView.backgroundColor = UIColor.blackColor;
-        _containerView.layer.cornerRadius = 15;
+        _containerView.layer.cornerRadius = 12;
         _containerView.layer.masksToBounds = YES;
         //_containerView.layer.maskedCorners = (kCALayerMinXMinYCorner | kCALayerMaxXMaxYCorner);
     }
@@ -566,6 +567,19 @@ static double WLToastAnimationMaxScale  = 1.5;
     }
     return _lbl_detail;
 }
+- (UIButton *)debug_closeBtn {
+    if (!_debug_closeBtn) {
+        _debug_closeBtn = [UIButton buttonWithType:UIButtonTypeSystem];
+        _debug_closeBtn.titleLabel.font = [UIFont systemFontOfSize:14 weight:UIFontWeightRegular];
+        [_debug_closeBtn setTitle:@"close" forState:UIControlStateNormal];
+        [_debug_closeBtn setTitleColor:UIColor.blueColor forState:UIControlStateNormal];
+        [_debug_closeBtn addTarget:self action:@selector(action_close:) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _debug_closeBtn;
+}
+- (void)action_close:(id)sender {
+    [self dismissAnimated:self.data.animated];
+}
 - (UILabel *)lblWithFont:(UIFont *)font color:(UIColor *)color alignment:(NSTextAlignment)alignment numOfLines:(NSInteger)numOfLines {
     UILabel *lbl = [[UILabel alloc] init];
     
@@ -576,11 +590,6 @@ static double WLToastAnimationMaxScale  = 1.5;
     lbl.numberOfLines = numOfLines;
     
     return lbl;
-}
-- (void)setShouldDismissWhenTapedBgView:(BOOL)shouldDismissWhenTapedBgView {
-    _shouldDismissWhenTapedBgView = shouldDismissWhenTapedBgView;
-    
-    self.userInteractionEnabled = _shouldDismissWhenTapedBgView;
 }
 
 
@@ -619,12 +628,6 @@ static double WLToastAnimationMaxScale  = 1.5;
 + (void)setBgViewColor:(UIColor *)bgViewColor {
     [WLToastView sharedToast].bgViewColor = bgViewColor;
 }
-+ (BOOL)shouldDismissWhenTapedBgView {
-    return [WLToastView sharedToast].shouldDismissWhenTapedBgView;
-}
-+ (void)setShouldDismissWhenTapedBgView:(BOOL)shouldDismissWhenTapedBgView {
-    [WLToastView sharedToast].shouldDismissWhenTapedBgView = shouldDismissWhenTapedBgView;
-}
 
 
 
@@ -634,7 +637,13 @@ static double WLToastAnimationMaxScale  = 1.5;
 
 
 - (void)startTimer_ifNeeded {
-    if (self.data.style != WLToastViewStyle_ActivityIndicator) {
+    
+    //活动指示器：不自动关闭，需手动关闭
+    if (self.data.style == WLToastViewStyle_ActivityIndicator) {
+     
+    }
+    //其他样式：自动关闭
+    else {
         
         [self resetTimer];
         
@@ -651,16 +660,16 @@ static double WLToastAnimationMaxScale  = 1.5;
 }
 - (void)resetTimer {
     [self stopTimer];
-    _time = self.dismissDelay;
+    _time = _dismissDelay;
 }
 - (void)action_timer:(NSTimer *)timer {
     
-    NSLog(@"%.2f", _time);
+    NSLog(@"⏰ %.2f", _time);
     
     if (_time <= 0) {
         [self stopTimer];
         NSLog(@"⏰ stop timer");
-        [self dismissAnimated:YES];
+        [self dismissAnimated:self.data.animated];
     }
     
     _time -= 0.1;

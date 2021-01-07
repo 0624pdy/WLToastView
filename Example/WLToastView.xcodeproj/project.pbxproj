@@ -23,8 +23,6 @@
 /* Begin PBXFileReference section */
 		152AA9491A02B1D0B78A5151 /* Pods_WLToastView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WLToastView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		250A477446CBA352CBE44C22 /* WLToastView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = WLToastView.podspec; path = ../WLToastView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		39BF616C3D94A0C3C79531F6 /* Pods-WLToastView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WLToastView_Tests.debug.xcconfig"; path = "Target Support Files/Pods-WLToastView_Tests/Pods-WLToastView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		4A85467BC45A5B5ADE708066 /* Pods-WLToastView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WLToastView_Tests.release.xcconfig"; path = "Target Support Files/Pods-WLToastView_Tests/Pods-WLToastView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		567AC97406BDFB69FC5E3737 /* Pods-WLToastView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WLToastView_Example.release.xcconfig"; path = "Target Support Files/Pods-WLToastView_Example/Pods-WLToastView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* WLToastView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WLToastView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -145,8 +143,6 @@
 			children = (
 				AFA630C4E107F6C529E05BB5 /* Pods-WLToastView_Example.debug.xcconfig */,
 				567AC97406BDFB69FC5E3737 /* Pods-WLToastView_Example.release.xcconfig */,
-				39BF616C3D94A0C3C79531F6 /* Pods-WLToastView_Tests.debug.xcconfig */,
-				4A85467BC45A5B5ADE708066 /* Pods-WLToastView_Tests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";

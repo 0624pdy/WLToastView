@@ -43,7 +43,6 @@
     WLToastView.dismissDelay = 1.5;
     WLToastView.showBgView = YES;
     WLToastView.bgViewColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.2];
-    WLToastView.shouldDismissWhenTapedBgView = NO;
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -75,12 +74,6 @@
         case 8: [WLToastView showCustomView:[self tmpView]]; break;
 
         default: break;
-    }
-
-    if (i <= 2) {
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            [WLToastView dismissAnimated:YES];
-        });
     }
 
     i ++;

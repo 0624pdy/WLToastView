@@ -2,6 +2,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 source 'https://github.com/0624pdy/WLToastView.git'
 
 use_frameworks!
+inhibit_all_warnings! #消除警告
 
 platform :ios, '9.0'
 

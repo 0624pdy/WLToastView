@@ -78,5 +78,8 @@
     
     _showDetail = (_detail.length > 0);
 }
+- (BOOL)animated {
+    return (_style != WLToastAnimation_None);
+}
 
 @end

@@ -34,9 +34,6 @@
 /** 背景视图的颜色，默认：RGBA(0, 0, 0, 0.2) */
 @property (nonatomic,class) UIColor *bgViewColor;
 
-/** 点击背景视图是否关闭，默认：NO */
-@property (nonatomic,class) BOOL shouldDismissWhenTapedBgView;
-
 
 
 
