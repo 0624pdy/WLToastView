@@ -1,6 +1,0 @@
-framework module WLToastView {
-  umbrella header "WLToastView-umbrella.h"
-
-  export *
-  module * { export * }
-}
